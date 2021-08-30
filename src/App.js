@@ -20,12 +20,21 @@ function App() {
     <div className={`App ${toggleLight ? "App-Dark" : ""}`}>
       <header className={`header`}>
         <div className={`toggle-menu`}>
-          <img
-            className={`menu-icon`}
-            src="https://img.icons8.com/carbon-copy/100/000000/menu.png"
-            alt="menu icon"
-            onClick={handleClickMenu}
-          />
+         {toggleMenu ? (
+            <img
+              className={`menu-icon`}
+              src="https://img.icons8.com/dotty/80/000000/multiply.png"
+              alt="menu icon"
+              onClick={handleClickMenu}
+            />
+          ) : (
+            <img
+              className={`menu-icon`}
+              src="https://img.icons8.com/carbon-copy/100/000000/menu.png"
+              alt="menu icon"
+              onClick={handleClickMenu}
+            />
+          )}
         </div>
         <div className={`toggle-light-dark`}>
           <WbSunnyIcon style={{ margin: "5px" }} />
