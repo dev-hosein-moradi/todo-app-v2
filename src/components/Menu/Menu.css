@@ -1,0 +1,34 @@
+.Menu {
+  background-color: #cadefc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25%;
+  z-index: 4;
+  /*  */
+  animation-name: menuAnimate;
+  animation-duration: 0.7s;
+  animation-iteration-count: 1;
+}
+/*  */
+@keyframes menuAnimate {
+  50% {
+    transform: scaleX(1.5);
+  }
+}
+
+/*  */
+@media (max-width: 800px) {
+  .Menu {
+    width: 60%;
+  }
+  .closeMenu {
+    display: none;
+  }
+  .openMenu {
+    display: flex;
+    position: absolute;
+    height: 100vh;
+    box-shadow: 8px 0px 22px -4px rgba(0, 0, 0, 0.57);
+  }
+}

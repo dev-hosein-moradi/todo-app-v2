@@ -1,0 +1,46 @@
+.errorMessage {
+  background-color: #f6a9a9;
+  width: 400px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 15px;
+  word-wrap: break-word;
+  word-break: break-all;
+  font-size: 14pt;
+  font-family: "Klee One", cursive;
+  color: #595260;
+  padding: 10px;
+}
+.errorBtn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+}
+.errorBtn button {
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.returnBtn:hover {
+  width: 15px;
+  height: 15px;
+}
+.errorMessage p {
+  margin: 0px;
+}
+
+@media (max-width: 600px) {
+  .errorMessage {
+    width: 95%;
+  }
+}

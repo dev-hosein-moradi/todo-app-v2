@@ -1,0 +1,32 @@
+.Tasks {
+  background-image: linear-gradient(
+    to right top,
+    #95e79b,
+    #95ebab,
+    #97eeba,
+    #9cf1c8,
+    #a3f3d4,
+    #a9f4db,
+    #b0f6e2,
+    #b7f7e8,
+    #bdf8ec,
+    #c3f9f0,
+    #caf9f3,
+    #d1faf6
+  );
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  padding: 0;
+  overflow-y: auto;
+}
+
+@media (max-width: 800px) {
+  .Tasks {
+    width: 100%;
+    padding: 0;
+  }
+  .lowVisibilit {
+    opacity: 0.6;
+  }
+}
